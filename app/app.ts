@@ -1,9 +1,11 @@
 import {App, Platform} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HomePage} from './pages/home/home';
+import {FIREBASE_PROVIDERS, defaultFirebase, AngularFire, FirebaseListObservable} from 'angularfire2';
 
 @App({
   template: '<ion-nav [root]="rootPage"></ion-nav>',
+  providers : [FIREBASE_PROVIDERS, defaultFirebase('https://angular2-firebase-sample.firebaseio.com')],
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/  
 })
 export class MyApp {
