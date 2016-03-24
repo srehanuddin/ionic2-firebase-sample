@@ -12,10 +12,19 @@ export class HomePage {
     
     constructor(af: AngularFire){
         this.tasks = af.list('/tasks');
-        
-        
-        this.tasks.add("ABC");
     } 
+    
+    addTask(task : HTMLInputElement): void {
+    
+        console.log(`Adding article title: ${task.value} `);
+        
+        this.tasks.add(task.value);
+
+    }
+    
+    removeTask(id){
+        this.tasks.remove(id);
+    }
     
     
     
