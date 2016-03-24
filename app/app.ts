@@ -5,7 +5,7 @@ import {FIREBASE_PROVIDERS, defaultFirebase} from 'angularfire2';
 
 @App({
   template: '<ion-nav [root]="rootPage"></ion-nav>',
-  providers : [FIREBASE_PROVIDERS, defaultFirebase('https://angular2-firebase-sample.firebaseio.com')],
+  providers : [FIREBASE_PROVIDERS, defaultFirebase('https://ionic2-firebase.firebaseio.com/')],
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/  
 })
 export class MyApp {
