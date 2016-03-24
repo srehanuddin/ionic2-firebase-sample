@@ -1,7 +1,7 @@
 import {App, Platform} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HomePage} from './pages/home/home';
-import {FIREBASE_PROVIDERS, defaultFirebase, AngularFire, FirebaseListObservable} from 'angularfire2';
+import {FIREBASE_PROVIDERS, defaultFirebase} from 'angularfire2';
 
 @App({
   template: '<ion-nav [root]="rootPage"></ion-nav>',
