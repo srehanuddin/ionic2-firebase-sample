@@ -16,10 +16,8 @@ export class HomePage {
     
     addTask(task : HTMLInputElement): void {
     
-        console.log(`Adding article title: ${task.value} `);
-        
+        console.log(`Adding article title: ${task.value} `);        
         this.tasks.add(task.value);
-
     }
     
     removeTask(id){
